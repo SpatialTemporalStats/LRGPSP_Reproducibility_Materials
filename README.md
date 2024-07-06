@@ -4,3 +4,7 @@ This file documents the artifacts associated with the article (i.e., the data an
 ## Artical Overview
 Low-rank approximation is a popular strategy to tackle the “big $n$ problem” associated with large-scale Gaussian process regressions. Basis functions for developing low-rank structures are crucial and should be carefully specified. Predictive processes simplify the problem by inducing basis functions with a covariance function and a set of knots. The existing literature suggests certain practical implementations of knot selection and covariance estimation; however, theoretical foundations explaining the influence of these two factors on predictive processes are lacking. In this paper, the asymptotic prediction performance of the predictive process and Gaussian process predictions are derived and the impacts of the selected knots and estimated covariance are studied. The use of support points as knots, which best represent data locations, is advocated. Extensive simulation studies demonstrate the superiority of support points and verify our theoretical results. Real data of precipitation and ozone are used as examples, and the efficiency of our method over other widely used low-rank approximation methods is verified.
 
+## Supporting Software Requirement
+Version of primary software used: R version 3.6.3 (2020-02-29)
+
+
