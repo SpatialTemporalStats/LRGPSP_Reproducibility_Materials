@@ -6,7 +6,8 @@ Low-rank approximation is a popular strategy to tackle the “big $n$ problem”
 
 ## File Overview
 
-## Reproduce each figure and table sequentially
+## Reproducibility Workflow
+This section 
 ### Figure 1 (and Figure S2)
 
 
