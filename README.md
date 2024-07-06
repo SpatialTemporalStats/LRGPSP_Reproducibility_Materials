@@ -8,9 +8,9 @@ Low-rank approximation is a popular strategy to tackle the “big $n$ problem”
 #### Version of primary software used
 R version 3.6.3 (2020-02-29)
 
-Libraries and dependencies used by the code:
+#### Libraries and dependencies used by the code
 
-assertthat version 0.2.1
+assertthat version 0.2.1, autoFRK version 1.4.3, doParallel version 1.0.17, fields version 14.1, 
 
 
 
