@@ -10,7 +10,21 @@ R version 3.6.3 (2020-02-29)
 
 #### Libraries and dependencies used by the code
 
-assertthat version 0.2.1, autoFRK version 1.4.3, doParallel version 1.0.17, fields version 14.1, 
+assertthat version 0.2.1
+
+autoFRK version 1.4.3
+
+doParallel version 1.0.17
+
+fields version 14.1
+
+foreach version 1.5.2
+
+FRK version 2.0.5
+
+geoR version 1.9-2
+
+
 
 
 
