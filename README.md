@@ -10,19 +10,7 @@ R version 3.6.3 (2020-02-29)
 
 #### Libraries and dependencies used by the code
 
-assertthat version 0.2.1
-
-autoFRK version 1.4.3
-
-doParallel version 1.0.17
-
-fields version 14.1
-
-foreach version 1.5.2
-
-FRK version 2.0.5
-
-geoR version 1.9-2
+assertthat_0.2.1, autoFRK_1.4.3, doParallel_1.0.17, fields_14.1, foreach_1.5.2, FRK_2.0.5, geoR_1.9-2, ggplot2_3.3.6, GpGp_0.4.0, LatticeKrig_8.4, magrittr_2.0.3, mvtnorm_1.1-3, purrr_0.3.4, rlist_0.4.6.2, sp_1.4-6, Split_1.2, support_0.1.4
 
 
 
