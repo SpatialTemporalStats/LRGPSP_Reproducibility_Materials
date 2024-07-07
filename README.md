@@ -2,17 +2,17 @@
 This file documents the artifacts associated with the article (i.e., the data and code supporting the computational findings) and describes how to reproduce all figures and results. Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, please set your working directory to this folder. The computation time reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
 ## Artical Overview
-Low-rank approximation is a popular strategy to tackle the “big $n$ problem” associated with large-scale Gaussian process regressions. Basis functions for developing low-rank structures are crucial and should be carefully specified. Predictive processes simplify the problem by inducing basis functions with a covariance function and a set of knots. The existing literature suggests certain practical implementations of knot selection and covariance estimation; however, theoretical foundations explaining the influence of these two factors on predictive processes are lacking. In this paper, the asymptotic prediction performance of the predictive process and Gaussian process predictions are derived and the impacts of the selected knots and estimated covariance are studied. The use of support points as knots, which best represent data locations, is advocated. Extensive simulation studies demonstrate the superiority of support points and verify our theoretical results. Real data of precipitation and ozone are used as examples, and the efficiency of our method over other widely used low-rank approximation methods is verified.
+Low-rank approximation is a popular strategy to tackle the “big $n$ problem” associated with large-scale Gaussian process regressions. Basis functions for developing low-rank structures are crucial and should be carefully specified. Predictive processes simplify the problem by inducing basis functions with a covariance function and a set of knots or representative points (rep-points). The existing literature suggests certain practical implementations of rep-points selection and covariance estimation; however, theoretical foundations explaining the influence of these two factors on predictive processes are lacking. In this paper, the asymptotic prediction performance of the predictive process and Gaussian process predictions are derived and the impacts of the selected rep-points and estimated covariance are studied. The use of support points (SPs) as knots, which best represent data locations, is advocated. Extensive simulation studies demonstrate the superiority of support points and verify our theoretical results. Real data of precipitation and ozone are used as examples, and the efficiency of our method over other widely used low-rank approximation methods is verified.
 
 ## File Overview
 ### k_DPP
-This sub-repository includes script "kdpp-sample.R" for selecting $k$ rep-points based on the fixed-size determinantal point process (k-DPPs) and its helper functions in "helper-functions.R". They are obtained from: https://github.com/camilacasquilho/k-dpp.
+This sub-repository includes the script "kdpp-sample.R" for selecting $k$ rep-points based on the fixed-size determinantal point process (k-DPPs), along with its helper functions in "helper-functions.R". These scripts are obtained from: https://github.com/camilacasquilho/k-dpp.
 
+### SP_Demo
+This sub-repository includes script "SP_Demo.R" for reproducing Figures 1 and S2, which illustrate patterns of various kinds of rep-points under two location sets.
 
 
 ## Reproducibility Workflow
-This section 
-### Figure 1 (and Figure S2)
 
 
 ## Data 
