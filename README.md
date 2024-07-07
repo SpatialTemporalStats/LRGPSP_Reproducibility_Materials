@@ -9,7 +9,7 @@ Low-rank approximation is a popular strategy to tackle the “big $n$ problem”
 This sub-repository includes the script "kdpp-sample.R" for selecting $k$ rep-points based on the fixed-size determinantal point process (k-DPPs), along with its helper functions in "helper-functions.R". These scripts are obtained from: https://github.com/camilacasquilho/k-dpp.
 
 ### SP_Demo
-This sub-repository includes script "SP_Demo.R" for reproducing Figures 1 and S2, which illustrate patterns of various kinds of rep-points under two location sets.
+This sub-repository includes the script "SP_Demo.R" for reproducing Figures 1 and S2, which illustrate the patterns of various kinds of rep-points under two location sets.
 
 
 ## Reproducibility Workflow
