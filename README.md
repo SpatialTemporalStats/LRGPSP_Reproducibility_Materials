@@ -5,11 +5,13 @@ This file documents the artifacts associated with the article (i.e., the data an
 Low-rank approximation is a popular strategy to tackle the “big $n$ problem” associated with large-scale Gaussian process regressions. Basis functions for developing low-rank structures are crucial and should be carefully specified. Predictive processes simplify the problem by inducing basis functions with a covariance function and a set of knots or representative points (rep-points). The existing literature suggests certain practical implementations of rep-points selection and covariance estimation; however, theoretical foundations explaining the influence of these two factors on predictive processes are lacking. In this paper, the asymptotic prediction performance of the predictive process and Gaussian process predictions are derived and the impacts of the selected rep-points and estimated covariance are studied. The use of support points (SPs) as knots, which best represent data locations, is advocated. Extensive simulation studies demonstrate the superiority of support points and verify our theoretical results. Real data of precipitation and ozone are used as examples, and the efficiency of our method over other widely used low-rank approximation methods is verified.
 
 ## Contents
-### Rep_Points
+#### Rep_Points
 This sub-repository provides R scripts for selecting various kinds of rep-points, including those based on the fixed-size determinantal point process (k-DPPs), grid points (Grids), random samples (Rands), and support points (SPs).
 
-### SP_Demo
+#### SP_Demo
 This sub-repository includes the script "SP_Demo.R" for reproducing Figures 1 and S2, which illustrate the patterns of various kinds of rep-points under two location sets.
+
+### S1_Gamma
 
 
 ## Reproducibility Workflow
@@ -17,6 +19,8 @@ Please begin by downloading the entire repository as the file "LRGPSP_Reproducib
 
 #### Figure 1 in Section 2.1 (and Figure S2 in Section S5)
 Figures 1 and S2 demonstrate the patterns of various kinds of representative points under two location sets. For more detailed code and computational time, please refer to the sub-repository "SP_Demo". Additionally, refer to the "Wrapper.R" file for the reproducibility command. The total computational time for plotting Figures 1 and S2 is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.
+
+#### Figure 2 and Table 1 in Section 3.1
 
 
 ## Data 
