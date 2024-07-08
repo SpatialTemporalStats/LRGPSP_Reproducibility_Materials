@@ -31,11 +31,11 @@ This sub-repository provides R scripts for reproducing Figure 2 and Table 1, whi
 ## Reproducibility Workflow
 Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially.
 
-#### Figure 1 in Section 2.1 (and Figure S2 in Section S5)
-Figures 1 and S2 demonstrate the patterns of various kinds of representative points under two location sets. For more detailed code and computational time, please refer to the sub-repository "SP_Demo". Additionally, refer to the "Wrapper.R" file for the reproducibility command. The total computational time for plotting Figures 1 and S2 is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.
+#### Reproduce Figure 1 in Section 2.1 (and Figure S2 in Section S5)
+Figures 1 and S2 demonstrate the patterns of various kinds of representative points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.  For more detailed code and computational time, please refer to the sub-repository "SP_Demo". 
 
-#### Figure 2 and Table 1 in Section 3.1
-
+#### Reproduce Figure 2 and Table 1 in Section 3.1
+Figure 2 and Table 1 illustrate the values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 2 hours. For more detailed code, outputs, and computational time, please refer to the sub-repository "S1_Gamma". 
 
 ## Data 
 
