@@ -8,11 +8,17 @@ Low-rank approximation is a popular strategy to tackle the “big $n$ problem”
 #### Rep_Points
 This sub-repository provides R scripts for selecting various kinds of rep-points, including those based on the fixed-size determinantal point process (k-DPPs), grid points (Grids), random samples (Rands), and support points (SPs).
 
+- Folder "k_DPP"
+      - "kdpp-sample.R": functions for selecting k-DPPs
+      - "helper-functions.R": helper functions for "kdpp-sample.R"
+- "Grid-sample.R": functions for selecting Grids
+- "Rand-sample.R": functions for selecting SPs
+
 #### SP_Demo
 This sub-repository includes the script "SP_Demo.R" for reproducing Figures 1 and S2, which illustrate the patterns of various kinds of rep-points under two location sets.
 
 #### S1_Gamma
-This sub-repository includes scripts for reproducing Figure 2 and Table, which demonstrate values of smoothness parameter $\gamma$ for the Mat\'ern covariance function under various parameter settings. 
+This sub-repository includes scripts for reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
 
 
 ## Reproducibility Workflow
