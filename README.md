@@ -16,7 +16,9 @@ This sub-repository provides R scripts for selecting various kinds of rep-points
 - "Rand-sample.R": functions for selecting SPs
 
 #### SP_Demo
-This sub-repository includes the script "SP_Demo.R" for reproducing Figures 1 and S2, which illustrate the patterns of various kinds of rep-points under two location sets.
+This sub-repository provides the R script for reproducing Figures 1 and S2, which illustrate the patterns of various kinds of rep-points under two location sets.
+
+- "SP_Demo.R": R script for reproducing Figures 1 and S2
 
 #### S1_Gamma
 This sub-repository includes scripts for reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
