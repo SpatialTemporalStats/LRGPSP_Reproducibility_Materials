@@ -21,7 +21,11 @@ This sub-repository provides the R script for reproducing Figures 1 and S2, whic
 - "SP_Demo.R": R script for reproducing Figures 1 and S2
 
 #### S1_Gamma
-This sub-repository includes scripts for reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
+This sub-repository provides R scripts for reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
+
+- "Gamma_values_single.R": R script for reproducing Figures 1 and S2 using results from one replicate (less computational time)
+- "Gamma_values_single.R": R script for reproducing Figures 1 and S2 using results from multiple replicates 
+- "helper-functions.R": a helper function
 
 
 ## Reproducibility Workflow
