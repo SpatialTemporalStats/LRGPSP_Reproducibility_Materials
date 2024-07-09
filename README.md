@@ -33,17 +33,19 @@ This sub-repository includes R scripts and outputs for reproducing Figure 3 and 
 - "Simu2.R": R script for reproducing Figure 3 and Table 2
 - "helper-functions.R": a helper function
 - "Setting1.csv", "Setting2.csv", "Setting3.csv", and "Setting4.csv": outputs from the simulated studies
-- "Set1Sum.csv", "Set2Sum.csv", "Set3Sum.csv", and "Set4Sum.csv": summarized results for ploting Figure 3
+- "Set1Sum.csv", "Set2Sum.csv", "Set3Sum.csv", and "Set4Sum.csv": summarized results for plotting Figure 3
 
 ## Reproducibility Workflow
 Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially. The computation time reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
-
 
 #### Reproduce Figure 1 in Section 2.1 (and Figure S2 in Section S5)
 Figures 1 and S2 demonstrate the patterns of various kinds of representative points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.  For more detailed code and computational time, please refer to the sub-repository "SP_Demo". 
 
 #### Reproduce Figure 2 and Table 1 in Section 3.1
 Figure 2 and Table 1 illustrate the values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 2 hours. For more detailed code, outputs, and computational time, please refer to the sub-repository "S1_Gamma". 
+
+#### Reproduce Figure 3 and Table 2 in Section 3.2
+Figure 3 and Table 2 demonstrate the influence of rep-points on the predictive process. Please refer to the "Wrapper.R" file for the commands to reproduce these results. There are three options for reproducibility. The first option, set as the default, reproduces Figure 3 and Table 2 using outputs from a single replicate, which takes approximately 16.5 hours. The second option, used in the article, reproduces the results using outputs from 100 replicates but requires significantly more time. The third option uses our pre-generated outputs directly. To select the second or third options, please manually adjust the settings in "Simu2.R". For more detailed code, outputs, and computational time, please refer to the sub-repository "S2_VersusK".
 
 ## Data 
 
