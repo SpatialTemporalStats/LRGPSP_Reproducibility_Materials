@@ -85,8 +85,11 @@ assertthat_0.2.1, autoFRK_1.4.3, doParallel_1.0.17, fields_13.3, foreach_1.5.2, 
 
 ## Reference
 [1] Kaufman, C. G., Schervish, M. J. and Nychka, D. W. (2008) ‘Covariance tapering for likelihood-based estimation in large spatial data sets’, Journal of the American Statistical Association, 103(484), pp. 1545–1555.
+
 [2] Sang, H. and Huang, J.Z. (2012). 'A full scale approximation of covariance functions for large spatial data sets', Journal of the Royal Statistical Society: Series B (Statistical Methodology), 74(1), pp. 111–132.
+
 [3] Cressie, N. and Johannesson, G. (2008), 'Fixed rank kriging for very large spatial data sets', Journal of the Royal Statistical Society: Series B (Statistical Methodology), 70(1), pp. 209-226.
+
 [4] Meng, C., Zhang, X., Zhang, J., Zhong, W. and Ma, P. (2020), 'More efficient approximation of smoothing splines via space-filling basis selection', Biometrika, 107(3), pp. 723–735. 
 
 
