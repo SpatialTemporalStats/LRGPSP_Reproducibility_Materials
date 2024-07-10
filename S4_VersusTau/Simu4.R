@@ -37,7 +37,7 @@
 Main=function(seed){
   ### Set parameters
   nt=n=5e3
-  tauseq=0.27*10^c(-3,-2,1,0,0.5,1,1.5,2)
+  tauseq=0.27*10^c(-3,-2,-1,0,0.5,1,1.5,2)
   thetat=c(1.5,0.168639,0.27,1.5)
   k=1.5*round(n^(2/2.9))
   
@@ -73,7 +73,7 @@ Main=function(seed){
 # a=Main(1)
 # t2=proc.time()[[3]]
 # t2-t1=67.107
-cl<- makeCluster(4) 
+cl<- makeCluster(8) 
 registerDoParallel(cl) 
 result= foreach(i=1:100,
                  .combine=cbind,
