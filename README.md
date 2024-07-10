@@ -36,7 +36,7 @@ This sub-repository includes R scripts and outputs for reproducing Figure 3 and 
 - "Set1Sum.csv", "Set2Sum.csv", "Set3Sum.csv", and "Set4Sum.csv": summarized results for plotting Figure 3
 
 #### S3_VersusN
-This sub-repository includes R scripts and outputs for reproducing Figures 4, 5, and S1, which are used to verify Theorems 1 and 2. Figures 4 and S1(a) demonstrate how the $\log$(MSPE)s of the predictive process predictions change as the sample size $n$ grows. Figures 5 and S1(b) compare the derived smoothness parameters $\gamma$ with the theoretical values.
+This sub-repository includes R scripts and outputs for reproducing Figures 4, 5, and S1, which are used to verify Theorems 1 and 2. Figures 4 and S1(a) demonstrate the convergence rates of the predictive process predictions with a sufficient number of rep-points and an estimated covariance function. Figures 5 and S1(b) compare smoothness parameters $\gamma$ derived by different approaches.
 
 - "Simu3.R": R script for reproducing Figures 4, 5, and S1
 - "Setting1.csv" and "SettingS.csv": outputs from the simulated studies
@@ -53,6 +53,9 @@ Figure 2 and Table 1 illustrate the values of smoothness parameter $\gamma$ for 
 
 #### Reproduce Figure 3 and Table 2 in Section 3.2
 Figure 3 and Table 2 demonstrate the influence of rep-points on the predictive process. Please refer to the "Wrapper.R" file for the commands to reproduce these results. There are three options for reproducibility. The first option, set as the default, reproduces Figure 3 and Table 2 using outputs from a single replicate, which takes approximately 16.5 hours. The second option, used in the article, reproduces the results using outputs from 100 replicates but requires significantly more time. The third option uses our pre-generated outputs directly. To select the second or third options, please manually adjust the settings in "Simu2.R". For more detailed code, outputs, and computational time, please refer to the sub-repository "S2_VersusK".
+
+#### Reproduce Figures 4 and 5 in Section 3.3 (and Figure S1 in Section S4)
+Figures 4, 5, and S1 are used to verify Theorems 1 and 2. Figures 4 and S1(a) show how the $\log$(MSPE)s of the predictive process predictions change as the sample size $n$ grows. Figure 5 and S1(b) display $\gamma$ obtained by two approaches. Please refer to the "Wrapper.R" file for the commands to reproduce these results. The outputs are based on 100 replicates. Generating outputs for Figures 4 and 5 from a single replicate takes approximately 6.5 minutes. For Figure S1, it takes about 11.9 minutes per replicate. Using 4 cores as specified in "Simu3.R", the entire process will take around 7.7 hours. Readers can adjust the number of cores used or opt to use our pre-generated outputs directly. For more detailed code, outputs, and computational time, please refer to the sub-repository "S3_VersusN".
 
 ## Data 
 
