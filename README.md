@@ -67,6 +67,13 @@ Figures 4, 5, and S1 are used to verify Theorems 1 and 2. Figures 4 and S1(a) sh
 Figure 6 is used to verify Theorem 3, illustrating how the $\log$(MSPE)s of the predictive process predictions change as the scale of the nugget effect $\tau^2$ increases. For the commands to reproduce these results, please refer to the "Wrapper.R" file. Since it takes only about 1 minute to generate the outputs of a single replicate, we suggest reproducing Figure 6 with outputs from 100 replicates. Using 4 cores in parallel, as specified in "Simu4.R," this process takes about 25 minutes. Readers can adjust the number of cores used or opt to use our pre-generated outputs directly. For more detailed code, outputs, and computational time, please refer to the sub-repository "S4_VersusTau."
 
 ## Data 
+Two real datasets are utilized in this study to compare various popular low-rank approximation methods and underscore the advantages of the proposed approach, which uses a predictive process with an estimated covariance and support points. They are available as part of the paper’s supplementary material. 
+
+#### Annual total precipitation anomalies data
+The first dataset comprises annual total precipitation anomalies observed at 7352 weather stations in the United States in 1962, as discussed by Kaufman et al. (2008) and Sang and Huang (2012). It is available online at https://www.image.ucar.edu/Data/precip_tapering/. Readers can access it by loading the “Real data/anom1962.RData” file within the “Code.zip” archive. 
+
+#### Total column ozone data
+The second dataset consists of 173,405 observations of the level-2 total column ozone for October 1, 1988, along with their locations. The entire total column ozone data were collected and preprocessed by NASA. The dataset used in this article is the same one discussed in Cressie and Johannesson (2008) and Meng et al. (2020). It was kindly provided by one of the author of Meng et al. (2020) and can be accessed by reading the “Real data/Ozone_dat.csv” in the “Code.zip” file. 
 
 ## Supporting Software Requirement
 #### Version of primary software used
