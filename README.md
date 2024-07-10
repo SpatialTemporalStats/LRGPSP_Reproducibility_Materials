@@ -42,6 +42,12 @@ This sub-repository includes R scripts and outputs for reproducing Figures 4, 5,
 - "Setting1.csv" and "SettingS.csv": outputs from the simulated studies
 - "Set1_GS.csv", "Set1_MSPE.csv", "SetS_GS.csv", and "SetS_MSPE.csv": summarized results for plotting Figures 4, 5, and S1
 
+#### S4_VersusTau
+This sub-repository includes R scripts and outputs for reproducing Figure 6, which demonstrates how the nugget effect influences predictive process predictions and is used to verify Theorem 3.
+
+- "Simu4.R": R script for reproducing Figure 6
+- "Tau.csv": outputs from the simulated studies
+
 ## Reproducibility Workflow
 Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially. The computation time reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
