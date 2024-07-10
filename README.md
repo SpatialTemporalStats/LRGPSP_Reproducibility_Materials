@@ -70,10 +70,10 @@ Figure 6 is used to verify Theorem 3, illustrating how the $\log$(MSPE)s of the 
 Two real datasets are utilized in this study to compare various popular low-rank approximation methods and underscore the advantages of the proposed approach, which uses a predictive process with an estimated covariance and support points. They are available as part of the paper’s supplementary material. 
 
 #### Annual total precipitation anomalies data
-The first dataset comprises annual total precipitation anomalies observed at 7352 weather stations in the United States in 1962, as discussed by Kaufman et al. (2008) and Sang and Huang (2012). It is available online at https://www.image.ucar.edu/Data/precip_tapering/. Readers can access it by loading the “Real data/anom1962.RData” file within the “Code.zip” archive. 
+The first dataset comprises annual total precipitation anomalies observed at 7352 weather stations in the United States in 1962, as discussed by [1] and [2]. It is available online at https://www.image.ucar.edu/Data/precip_tapering/. Readers can access it by loading the “Real data/anom1962.RData” file within the “Code.zip” archive. 
 
 #### Total column ozone data
-The second dataset consists of 173,405 observations of the level-2 total column ozone for October 1, 1988, along with their locations. The entire total column ozone data were collected and preprocessed by NASA. The dataset used in this article is the same one discussed in Cressie and Johannesson (2008) and Meng et al. (2020). It was kindly provided by one of the author of Meng et al. (2020) and can be accessed by reading the “Real data/Ozone_dat.csv” in the “Code.zip” file. 
+The second dataset consists of 173,405 observations of the level-2 total column ozone for October 1, 1988, along with their locations. The entire total column ozone data were collected and preprocessed by NASA. The dataset used in this article is the same one discussed in [3] and [4]. It was kindly provided by one of the author of [4] and can be accessed by reading the “Real data/Ozone_dat.csv” in the “Code.zip” file. 
 
 ## Supporting Software Requirement
 #### Version of primary software used
@@ -82,6 +82,12 @@ R version 3.6.3 (2020-02-29)
 #### Libraries and dependencies used by the code
 
 assertthat_0.2.1, autoFRK_1.4.3, doParallel_1.0.17, fields_13.3, foreach_1.5.2, FRK_2.0.5, geoR_1.9-2, ggplot2_3.3.6, GpGp_0.4.0, here_1.0.1, LatticeKrig_8.4, magrittr_2.0.3, mvtnorm_1.1-3, purrr_0.3.4, rlist_0.4.6.2, sp_1.4-6, Split_1.2, support_0.1.4
+
+## Reference
+[1] Kaufman, C. G., Schervish, M. J. and Nychka, D. W. (2008) ‘Covariance tapering for likelihood-based estimation in large spatial data sets’, Journal of the American Statistical Association, 103(484), pp. 1545–1555.
+[2] Sang, H. and Huang, J.Z. (2012). 'A full scale approximation of covariance functions for large spatial data sets', Journal of the Royal Statistical Society: Series B (Statistical Methodology), 74(1), pp. 111–132.
+[3] Cressie, N. and Johannesson, G. (2008), 'Fixed rank kriging for very large spatial data sets', Journal of the Royal Statistical Society: Series B (Statistical Methodology), 70(1), pp. 209-226.
+[4] Meng, C., Zhang, X., Zhang, J., Zhong, W. and Ma, P. (2020), 'More efficient approximation of smoothing splines via space-filling basis selection', Biometrika, 107(3), pp. 723–735. 
 
 
 
