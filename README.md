@@ -21,14 +21,14 @@ This sub-repository provides the R script for reproducing Figures 1 and S2, whic
 - "SP_Demo.R": R script for reproducing Figures 1 and S2
 
 #### S1_Gamma
-This sub-repository provides R scripts for reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
+This sub-repository provides R scripts for performing the simulated studies in Section 3.1 and reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
 
 - "Gamma_values_single.R": R script for reproducing Figures 1 and S2 using results from a single replicate (less computational time)
 - "Gamma_values_single.R": R script for reproducing Figures 1 and S2 using results from multiple replicates 
 - "helper-functions.R": a helper function
 
 #### S2_VersusK
-This sub-repository includes R scripts and outputs for reproducing Figure 3 and Table 2. Figure 3 demonstrates the impact of rep-points on the predictive process by comparing the prediction performance of various types of representative points across four scenarios. Table 2 displays the variations in energy distances for rep-points with respect to their sizes.
+This sub-repository includes R scripts for performing the simulated studies in Section 3.2 and reproducing Figure 3 and Table 2, along with the corresponding outputs. Figure 3 demonstrates the impact of rep-points on the predictive process by comparing the prediction performance of various types of representative points across four scenarios. Table 2 displays the variations in energy distances for rep-points with respect to their sizes.
 
 - "Simu2.R": R script for reproducing Figure 3 and Table 2
 - "helper-functions.R": a helper function
@@ -36,14 +36,14 @@ This sub-repository includes R scripts and outputs for reproducing Figure 3 and 
 - "Set1Sum.csv", "Set2Sum.csv", "Set3Sum.csv", and "Set4Sum.csv": summarized results for plotting Figure 3
 
 #### S3_VersusN
-This sub-repository includes R scripts and outputs for reproducing Figures 4, 5, and S1, which are used to verify Theorems 1 and 2. Figures 4 and S1(a) demonstrate the convergence rates of the predictive process predictions with a sufficient number of rep-points and an estimated covariance function. Figures 5 and S1(b) compare smoothness parameters $\gamma$ derived by different approaches.
+This sub-repository includes R scripts for performing the simulated studies in Section 3.3 and reproducing Figures 4, 5, and S1, which are used to verify Theorems 1 and 2, along with the corresponding outputs. Figures 4 and S1(a) demonstrate the convergence rates of the predictive process predictions with a sufficient number of rep-points and an estimated covariance function. Figures 5 and S1(b) compare smoothness parameters $\gamma$ derived by different approaches.
 
 - "Simu3.R": R script for reproducing Figures 4, 5, and S1
 - "Setting1.csv" and "SettingS.csv": outputs from the simulated studies
 - "Set1_GS.csv", "Set1_MSPE.csv", "SetS_GS.csv", and "SetS_MSPE.csv": summarized results for plotting Figures 4, 5, and S1
 
 #### S4_VersusTau
-This sub-repository includes R scripts and outputs for reproducing Figure 6, which demonstrates how the nugget effect influences predictive process predictions and is used to verify Theorem 3.
+This sub-repository includes R scripts for performing the simulated studies in Section 3.3 and reproducing Figure 6, which demonstrates how the nugget effect influences predictive process predictions and is used to verify Theorem 3.
 
 - "Simu4.R": R script for reproducing Figure 6
 - "Tau.csv": outputs from the simulated studies
