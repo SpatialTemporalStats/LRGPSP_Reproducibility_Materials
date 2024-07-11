@@ -70,10 +70,10 @@ Figure 6 is used to verify Theorem 3, illustrating how the $\log$(MSPE)s of the 
 Two real datasets are utilized in this study to compare various popular low-rank approximation methods and underscore the advantages of the proposed approach, which uses a predictive process with an estimated covariance and support points. They are available as part of the paper’s supplementary material. 
 
 #### Annual total precipitation anomalies data
-The first dataset comprises annual total precipitation anomalies observed at 7352 weather stations in the United States in 1962, as discussed by [1] and [2]. It is available online at https://www.image.ucar.edu/Data/precip_tapering/. Readers can access it by loading the “Real data/anom1962.RData” file within the “Code.zip” archive. 
+The first dataset comprises annual total precipitation anomalies observed at 7352 weather stations in the United States in 1962, as discussed by [1] and [2]. It is available online at https://www.image.ucar.edu/Data/precip_tapering/. Readers can access it by loading the “anom1962.RData” file within the sub-repository “Real_Data”. 
 
 #### Total column ozone data
-The second dataset consists of 173,405 observations of the level-2 total column ozone for October 1, 1988, along with their locations. The entire total column ozone data were collected and preprocessed by NASA. The dataset used in this article is the same one discussed in [3] and [4]. It was kindly provided by one of the author of [4] and can be accessed by reading the “Real data/Ozone_dat.csv” in the “Code.zip” file. 
+The second dataset consists of 173,405 observations of the level-2 total column ozone for October 1, 1988, along with their locations. The entire total column ozone data were collected and preprocessed by NASA. The dataset used in this article is the same one discussed in [3] and [4]. It was kindly provided by one of the author of [4] and can be accessed by reading the “Ozone_dat.csv” in the sub-repository “Real_Data”. 
 
 ## Supporting Software Requirement
 #### Version of primary software used
