@@ -24,13 +24,13 @@ This sub-repository provides the R script for reproducing Figures 1 and S2, whic
 This sub-repository provides R scripts for performing the simulated studies in Section 3.1 and reproducing Figure 2 and Table 1, which demonstrate values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. 
 
 - "Gamma_values_single.R": R script for reproducing Figures 1 and S2 using results from a single replicate (less computational time)
-- "Gamma_values_single.R": R script for reproducing Figures 1 and S2 using results from multiple replicates 
+- "Gamma_values.R": R script for performing the simulated studies in Section 3.1 and reproducing Figures 1 and S2 using results from multiple replicates 
 - "helper-functions.R": a helper function
 
 #### S2_VersusK
 This sub-repository includes R scripts for performing the simulated studies in Section 3.2 and reproducing Figure 3 and Table 2, along with the corresponding outputs. Figure 3 demonstrates the impact of rep-points on the predictive process by comparing the prediction performance of various types of representative points across four scenarios. Table 2 displays the variations in energy distances for rep-points with respect to their sizes.
 
-- "Simu2.R": R script for reproducing Figure 3 and Table 2
+- "Simu2.R": R script for performing the simulated studies in Section 3.2 and reproducing Figure 3 and Table 2
 - "helper-functions.R": a helper function
 - "Setting1.csv", "Setting2.csv", "Setting3.csv", and "Setting4.csv": outputs from the simulated studies
 - "Set1Sum.csv", "Set2Sum.csv", "Set3Sum.csv", and "Set4Sum.csv": summarized results for plotting Figure 3
@@ -38,16 +38,27 @@ This sub-repository includes R scripts for performing the simulated studies in S
 #### S3_VersusN
 This sub-repository includes R scripts for performing the simulated studies in Section 3.3 and reproducing Figures 4, 5, and S1, which are used to verify Theorems 1 and 2, along with the corresponding outputs. Figures 4 and S1(a) demonstrate the convergence rates of the predictive process predictions with a sufficient number of rep-points and an estimated covariance function. Figures 5 and S1(b) compare smoothness parameters $\gamma$ derived by different approaches.
 
-- "Simu3.R": R script for reproducing Figures 4, 5, and S1
+- "Simu3.R": R script for performing the simulated studies in Section 3.3 and reproducing Figures 4, 5, and S1
 - "Setting1.csv" and "SettingS.csv": outputs from the simulated studies
 - "Set1_GS.csv", "Set1_MSPE.csv", "SetS_GS.csv", and "SetS_MSPE.csv": summarized results for plotting Figures 4, 5, and S1
 
 #### S4_VersusTau
 This sub-repository includes R scripts for performing the simulated studies in Section 3.3 and reproducing Figure 6, which demonstrates how the nugget effect influences predictive process predictions and is used to verify Theorem 3.
 
-- "Simu4.R": R script for reproducing Figure 6
+- "Simu4.R": R script for performing the simulated studies in Section 3.3 and reproducing Figure 6
 - "Tau.csv": outputs from the simulated studies
 
+#### Real_Data
+This sub-repository includes R scripts for performing the real data examples in Section 4 and reproducing Tables 3 and 4, which compare the performance of various kinds of low-rank approximation methods.
+
+- "anom1962.RData": the annual total precipitation anomalies data used in Section 4.1
+- "Ozone_dat.csv": the level-2 total column ozone data in Section 4.2
+- "DP_LRK.R": R script for performing the first real data example and reproducing Table 3
+- "DTCO_LRK.R": R script for performing the second real data example and reproducing Table 4
+- "Res_DP.csv": outputs from the first real data example
+- "Res_DTCO.csv": outputs from the second real data example
+
+  
 ## Reproducibility Workflow
 Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially. The computation time reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
@@ -65,6 +76,8 @@ Figures 4, 5, and S1 are used to verify Theorems 1 and 2. Figures 4 and S1(a) sh
 
 #### Reproduce Figure 6 in Section 3.3
 Figure 6 is used to verify Theorem 3, illustrating how the $\log$(MSPE)s of the predictive process predictions change as the scale of the nugget effect $\tau^2$ increases. For the commands to reproduce these results, please refer to the "Wrapper.R" file. Since it takes only about 1 minute to generate the outputs of a single replicate, we suggest reproducing Figure 6 with outputs from 100 replicates. Using 4 cores in parallel, as specified in "Simu4.R," this process takes about 25 minutes. Readers can adjust the number of cores used or opt to use our pre-generated outputs directly. For more detailed code, outputs, and computational time, please refer to the sub-repository "S4_VersusTau."
+
+#### Reproduce Tables 3 and 4 in Section 4 (and Figure S3 in Section S5)
 
 ## Data 
 Two real datasets are utilized in this study to compare various popular low-rank approximation methods and underscore the advantages of the proposed approach, which uses a predictive process with an estimated covariance and support points. They are available as part of the paper’s supplementary material. 
