@@ -61,7 +61,7 @@ This sub-repository includes R scripts for performing the real data examples in 
 
   
 ## Reproducibility Workflow
-Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially. The computation time reported below was recorded using (R 3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
+Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially. The computation time reported below was recorded using R (3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
 #### Reproduce Figure 1 in Section 2.1 (and Figure S2 in Section S5)
 Figures 1 and S2 demonstrate the patterns of various kinds of representative points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.  For more detailed code and computational time, please refer to the sub-repository "SP_Demo". 
