@@ -30,7 +30,7 @@
 #      36 ,  64 , 100 , 144,  196 , 289 , 400 , 484             #
 #################################################################
 #################################################################################
-### Build the function for reproducing results of one replicate in Figure 3(a)
+### Build the function for reproducing results of a single replicate in Figure 3(a)
 # Input: seed 
 # Output: a matrix store the outputs of energy distance and rmse 
 Main=function(seed){
@@ -247,7 +247,7 @@ p
 #     289 ,  529, 729 , 900 , 1156, 1369, 1600, 1764            #
 #################################################################
 #################################################################################
-### Build the function for reproducing results of one replicate in Figure 3(b)
+### Build the function for reproducing results of a single replicate in Figure 3(b)
 # Input: seed 
 # Output: a matrix store the outputs of energy distance and rmse 
 Main=function(seed){
@@ -476,7 +476,7 @@ theta2=c(2,0.185611,0.27,1.5)
 Thetaset=rbind(thetat,theta1,theta2)
 
 
-### Build the function for reproducing results of one replicate in Figure 3(c)
+### Build the function for reproducing results of a single replicate in Figure 3(c)
 # Input: seed 
 # Output: a matrix store the outputs of energy distance and rmse 
 Main=function(seed){
@@ -714,7 +714,7 @@ fsub=function(X,Y,thetat,L.decomposed,Xt,Yt,b,seed){
   return(out)
 }
 
-### Build the function for reproducing results of one replicate in Figure 3(d) and Table 2
+### Build the function for reproducing results of a single replicate in Figure 3(d) and Table 2
 # Input: seed 
 # Output: a matrix store the outputs of energy distance and rmse 
 Main=function(seed){
