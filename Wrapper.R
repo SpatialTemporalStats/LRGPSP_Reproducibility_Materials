@@ -1,5 +1,5 @@
 ################  Wrapper file for sequentially implementing each figure and table  ################
-# This file outlines the reproducibility workflow of the artical. 
+# This file outlines the reproducibility workflow of the article. 
 # Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". 
 # Next, please set your working directory to this folder. 
 # The computation time reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
@@ -53,36 +53,35 @@ source(here("SP_Demo","SP_Demo.R"))
 # covariance function under various parameter settings.                                #
 # Code and outputs can be found in sub-repository "S1_Gamma".                          #
 ########################################################################################
-# Reproduce Figure 2 and Table 1 basing on results from one replicate, which takes about 2 hours.
+# Reproduce Figure 2 and Table 1 based on results from a single replicate, which takes about 2 hours.
 source(here("S1_Gamma","Gamma_values_single.R"))
-# Reproduce Figure 2 and Table 1 basing on results from multiple replicates.
+# Reproduce Figure 2 and Table 1 based on results from multiple replicates.
 # source(here("S1_Gamma","Gamma_values.R"))
 
 
 
 ######   Figure 3 and Table 2 in Section 3.2   #########################################
-# Figure 3 compares the rooted mean squared predictive errors (RMSPE) obtained by      #
+# Figure 3 compares the rooted mean squared predictive errors (RMSPE) obtained by using#
 # various kinds of rep-points under four scenarios. The details about these scenarios  # 
 # are given in Section 3.2.                                                            #                                                                    #
 # Table 2 shows how the energy distances of rep-points change as the size of rep-points#
 # increases. Additionally, it compares energy distances of various kinds of rep-points.#
 # Code and outputs can be found in sub-repository "S2_VersusK".                        #
 ########################################################################################
-# Reproduce Figure 3 and Table 2 basing on results from one replicate. It takes about 16.5 hours.
+# Reproduce Figure 3 and Table 2 based on results from a single replicate. It takes about 16.5 hours.
 source(here("S2_VersusK","Simu2.R"))
 # Note that we provide three options for reproducing Figure 3 and Table 2. Readers could
 # choose any of them by changing the code as shown in "Simu2.R".
-# The first one is as above. That is, reproduce Figure 3 and Table 2 using outputs from one replicate.
-# The second one is what we did in the article. That is, reproduce them using 
-# outputs from 100 replicates. It would take you a pretty long time.
-# The third one is using our outputs, which has been given in sub-repository "S2_VersusK".
+# 1. As above, reproduce Figure 3 and Table 2 using outputs from a single replicate.
+# 2. As done in the article, reproduce Figure 3 and Table 2 using outputs from 100 replicates. This option requires significantly more time.
+# 3. Use our pre-generated outputs, which are provided in the sub-repository "S2_VersusK".
 
 
 
 ######   Figures 4 and 5 in Section 3.3 (and Figure S1 in Section S4)   ################
 # Figures 4 and S1(a) show how log(MSPE)s of predictive process predictions with a     #
 # sufficient number of rep-points change as the sample size n grows.                   #                                                                    #
-# Figures 5 and S1(b) compare the derived smoothness parameters with the theoritical values #
+# Figures 5 and S1(b) compare the smoothness parameters obtained by two approaches.    #
 # Code and outputs can be found in sub-repository "S3_VersusN".                        #
 ########################################################################################
 source(here("S3_VersusN","Simu3.R"))
@@ -110,7 +109,7 @@ source(here("S4_VersusTau","Simu4.R"))
 ######   Tables 3 and 4 in Section 4    ################################################
 # Tables 3 and 4 compare the performance of various kinds of low-rank approximation    #
 # methods using two real datasets.                                                     #
-# Code, data, and outputs can be found in sub-repository "Real_Data".                  #
+# Code and datasets can be found in sub-repository "Real_Data".                        #
 ########################################################################################
 ### To reproduce the results in Table 3
 source(here("Real_Data","DP_LRK.R"))
