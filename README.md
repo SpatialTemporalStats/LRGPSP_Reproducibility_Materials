@@ -77,7 +77,7 @@ Figure 6 is used to verify Theorem 3, illustrating how the $\log$(MSPE)s of the 
 
 #### Reproduce Tables 3 and 4 in Section 4 (and Figure S3 in Section S5)
 Tables 3 and 4 compare various low-rank approximation methods using two real datasets. For commands to reproduce these results, please refer to the "Wrapper.R" file. Generating outputs for a single replicate of Tables 3 and 4 takes about 13.5 minutes and XXX hours, respectively. 
-%Using 4 cores in parallel, as specified in "DP_LRK.R" and "DTCO_LRK.R", this section takes approximately XXX hours. Readers can adjust the number of cores used or opt to use our pre-generated outputs directly. For the data, detailed code, outputs, and computational time, please refer to the sub-repository "Real_Data".
+\%Using 4 cores in parallel, as specified in "DP_LRK.R" and "DTCO_LRK.R", this section takes approximately XXX hours. Readers can adjust the number of cores used or opt to use our pre-generated outputs directly. For the data, detailed code, outputs, and computational time, please refer to the sub-repository "Real_Data".
 
 
 ## Data 
