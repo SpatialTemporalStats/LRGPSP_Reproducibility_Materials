@@ -64,10 +64,10 @@ This sub-repository includes R scripts for performing the real data examples in 
 Please begin by downloading the entire repository as the file "LRGPSP_Reproducibility_Materials.zip" and extracting it as a folder named "LRGPSP_Reproducibility_Materials". Next, set your working directory to this folder. Then, load necessary R packages and functions. Finally, follow the "Wrapper.R" file to reproduce each figure and table sequentially. The computation time reported below was recorded using R (3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
 #### Reproduce Figure 1 in Section 2.1 (and Figure S2 in Section S5)
-Figures 1 and S2 demonstrate the patterns of various kinds of representative points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.  For more detailed code and computational time, please refer to the sub-repository "SP_Demo". 
+Figures 1 and S2 demonstrate the patterns of various kinds of rep-points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs.  For more detailed code and computational time, please refer to the file "SP_Demo.R" in the sub-repository "SP_Demo". 
 
 #### Reproduce Figure 2 and Table 1 in Section 3.1
-Figure 2 and Table 1 illustrate the values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 2 hours. For more detailed code, outputs, and computational time, please refer to the sub-repository "S1_Gamma". 
+Figure 2 and Table 1 illustrate the values of smoothness parameter $\gamma$ for the Matern covariance function under various parameter settings. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 2 hours. For more detailed code, computational time, and outputs, please refer to the file "Gamma_values.R" in the sub-repository "S1_Gamma". 
 
 #### Reproduce Figure 3 and Table 2 in Section 3.2
 Figure 3 and Table 2 demonstrate the influence of rep-points on the predictive process. Please refer to the "Wrapper.R" file for the commands to reproduce these results. There are three options for reproducibility. The first option, set as the default, reproduces Figure 3 and Table 2 using outputs from a single replicate, which takes approximately 16.5 hours. The second option, used in the article, reproduces the results using outputs from 100 replicates but requires significantly more time. The third option uses our pre-generated outputs directly. To select the second or third options, please manually adjust the settings in "Simu2.R". For more detailed code, outputs, and computational time, please refer to the sub-repository "S2_VersusK".
@@ -83,7 +83,7 @@ Tables 3 and 4 compare various low-rank approximation methods using two real dat
 
 
 ## Data 
-Two real datasets are utilized in this study to compare various popular low-rank approximation methods and underscore the advantages of the proposed approach, which uses a predictive process with an estimated covariance and support points. They are available as part of the paper’s supplementary material. 
+Two real datasets are utilized in this study to compare various popular low-rank approximation methods and underscore the advantages of the proposed approach, which uses a predictive process with an estimated covariance and SPs. They are available as part of the paper’s supplementary material. 
 
 #### Annual total precipitation anomalies data
 The first dataset comprises annual total precipitation anomalies observed at 7352 weather stations in the United States in 1962, as discussed by [1] and [2]. It is available online at https://www.image.ucar.edu/Data/precip_tapering/. Readers can access it by loading the “anom1962.RData” file within the sub-repository “Real_Data”. 
