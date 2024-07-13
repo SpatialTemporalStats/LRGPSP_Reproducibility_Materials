@@ -53,7 +53,7 @@ tildef.hatc.rmse=function(X,Y,repX,thetaset,Xt,Yt){
 # Purpose: Calculate the energy distance between locations and rep-points. 
 # Inputs: X           n by p location matrix
 #         repid       indeces of rep-points according to X
-# Output: Energy distance.
+# Output: Energy distance
 energy.dist=function(X,repid){
   repX=X[repid,]        
   DXY=rdist(X,repX)
