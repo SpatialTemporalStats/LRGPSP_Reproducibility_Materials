@@ -31,7 +31,7 @@ This sub-repository provides R scripts for performing the simulated studies in S
 - "helper-functions.R": a helper function
 
 #### S2_VersusK
-This sub-repository includes R scripts for performing the simulated studies in Section 3.2 and reproducing Figure 3 and Table 2, along with the corresponding outputs. Figure 3 demonstrates the impact of rep-points on the predictive process by comparing the prediction performance of various types of representative points across four scenarios. Table 2 displays the variations in energy distances for rep-points with respect to their sizes.
+This sub-repository includes R scripts for performing the simulated studies in Section 3.2 and reproducing Figure 3 and Table 2, along with the corresponding outputs. Figure 3 demonstrates the impact of rep-points on the predictive process by comparing the prediction performance of various types of rep-points across four scenarios. Table 2 displays the variations in energy distances for rep-points with respect to their sizes.
 
 - "Simu2.R": R script for performing the simulated studies in Section 3.2 and reproducing Figure 3 and Table 2
 - "helper-functions.R": a helper function
