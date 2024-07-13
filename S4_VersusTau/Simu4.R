@@ -73,7 +73,7 @@ Main=function(seed){
 # a=Main(1)
 # t2=proc.time()[[3]]
 # t2-t1=67.107
-cl<- makeCluster(8) 
+cl<- makeCluster(4) 
 registerDoParallel(cl) 
 result= foreach(i=1:100,
                  .combine=cbind,
