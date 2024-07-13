@@ -1,7 +1,7 @@
 ############# Calculate the smoothness parameter \gamma  #############
 library(fields)
 
-# Purpose: Evaluate the value of \gamma for the Matern covariance function in (7) basing on the method descripted on Page 14
+# Purpose: Evaluate the value of \gamma for the Matern covariance function in (7) based on the method descripted on Page 14
 # Inputs: n           size of locations
 #         thetaset    candidate of theta=(sigma^2,phi,nu), number of candidate \by 3
 #         setseed     seed
