@@ -1,5 +1,5 @@
 ########################################################################################
-# This file reproduces Figure 2 and Table 1 using results from one replication         #
+# This file reproduces Figure 2 and Table 1 using results from a single replicate      #
 ########################################################################################    
 # Necessary packages and functions
 # library(fields)
