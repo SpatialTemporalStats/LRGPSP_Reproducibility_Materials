@@ -17,7 +17,7 @@
 
 ### Generate full data for the first location set
 # t1=proc.time()[[3]]
-set.seed(100)
+set.seed(200)
 X=cbind(runif(2e4),runif(2e4))
 thetat=c(1.5,0.168639,0.27,1.5)
 C=thetat[1]*stationary.cov(X,Covariance = "Matern",smoothness=thetat[4],theta=thetat[2])
@@ -116,7 +116,7 @@ PT
 
 
 ### Generate full data for the second location set
-set.seed(100)
+set.seed(2)
 X=rbind(cbind(runif(round((2e4)*2/3),0,0.5),runif(round((2e4)*2/3),0,0.5)),
             cbind(runif((2e4)*1/3+1),runif((2e4)*1/3+1)))
 thetat=c(1.5,0.168639,0.27,1.5)
