@@ -59,6 +59,7 @@ This sub-repository includes R scripts for performing the real data examples in 
 - "Ozone_dat.csv": the level-2 total column ozone data in Section 4.2
 - "DP_LRK.R": R script for performing the first real data example and reproducing Table 3
 - "DTCO_LRK.R": R script for performing the second real data example and reproducing Table 4
+- "Res_DP.csv" and "Res_DTCO.csv": outputs from the real data examples
 
   
 ## Reproducibility Workflow
@@ -80,7 +81,7 @@ Figures 4, 5, and S1 are used to verify Theorems 1 and 2. Figures 4 and S1(a) sh
 Figure 6 is used to verify Theorem 3, illustrating how the $\log$(MSPE)s of the predictive process predictions change as the scale of the nugget effect $\tau^2$ increases. For the commands to reproduce these results, please refer to the "Wrapper.R" file. Since it takes only about 1 minute to generate the outputs of a single replicate, we suggest reproducing Figure 6 with outputs from 100 replicates. Using 4 cores in parallel, as specified in "Simu4.R," this process takes about 25 minutes. Readers can adjust the number of cores used or opt to use our pre-generated outputs directly. For more detailed code, outputs, and computational time, please refer to the sub-repository "S4_VersusTau".
 
 #### Reproduce Tables 3 and 4 in Section 4 (and Figure S3 in Section S5)
-Tables 3 and 4 compare various low-rank approximation methods using two real datasets. For commands to reproduce these results, please refer to the "Wrapper.R" file. Generating outputs for a single replicate of Tables 3 and 4 takes about 13.5 minutes and 2.25 hours, respectively. Note that the computational times recorded here differ from those in the article due to variations in computational environments. However, these times still accurately reflect the comparative performance of the various methods. For the data, detailed code, and computational time, please refer to the sub-repository "Real_Data". 
+Tables 3 and 4 compare various low-rank approximation methods using two real datasets. For commands to reproduce these results, please refer to the "Wrapper.R" file. Generating outputs for a single replicate of Tables 3 and 4 takes about 13.5 minutes and 2.25 hours, respectively. For the data, outputs, code, and detailed computational time, please refer to the sub-repository "Real_Data". 
 
 
 ## Data 
